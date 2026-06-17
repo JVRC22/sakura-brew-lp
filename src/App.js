@@ -1,24 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import ProblemSection from './components/ProblemSection';
+import WhyNowSection from './components/WhyNowSection';
+import ValueSection from './components/ValueSection';
+import MenuShowcase from './components/MenuShowcase';
+import ExperienceSection from './components/ExperienceSection';
+import LeadForm from './components/LeadForm';
+import GoToMarket from './components/GoToMarket';
+import AARRRFunnel from './components/AARRRFunnel';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <main>
+        <Hero />
+        <div className="section-divider" />
+        <ProblemSection />
+        <div className="section-divider" />
+        <WhyNowSection />
+        <div className="section-divider" />
+        <ValueSection />
+        <div className="section-divider" />
+        <MenuShowcase />
+        <div className="section-divider" />
+        <ExperienceSection />
+        <div className="section-divider" />
+        <LeadForm />
+        <div className="section-divider" />
+        <GoToMarket />
+        <div className="section-divider" />
+        <AARRRFunnel />
+        <div className="section-divider" />
+      </main>
+      <Footer />
+    </>
   );
 }
 
