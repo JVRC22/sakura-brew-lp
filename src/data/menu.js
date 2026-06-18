@@ -7,6 +7,7 @@ export const menuItems = [
     price: 'Desde $85',
     accent: 'var(--matcha)',
     gradient: 'linear-gradient(160deg, rgba(183, 201, 107, 0.2), rgba(14, 10, 7, 0.9) 60%)',
+    image: '/images/menu/matcha-frappe.png',
   },
   {
     id: 'bubble-tea',
@@ -16,6 +17,7 @@ export const menuItems = [
     price: 'Desde $80',
     accent: 'var(--sakura)',
     gradient: 'linear-gradient(160deg, rgba(233, 93, 139, 0.2), rgba(14, 10, 7, 0.9) 60%)',
+    image: '/images/menu/bubble-tea-frutas.png',
   },
   {
     id: 'cafe-coreano',
@@ -25,6 +27,7 @@ export const menuItems = [
     price: 'Desde $75',
     accent: 'var(--copper)',
     gradient: 'linear-gradient(160deg, rgba(184, 115, 69, 0.2), rgba(14, 10, 7, 0.9) 60%)',
+    image: '/images/menu/cafe-coreano-frio.png',
   },
   {
     id: 'yuzu-lemonade',
@@ -34,6 +37,7 @@ export const menuItems = [
     price: 'Desde $70',
     accent: 'var(--yuzu)',
     gradient: 'linear-gradient(160deg, rgba(244, 201, 93, 0.2), rgba(14, 10, 7, 0.9) 60%)',
+    image: '/images/menu/yuzu-lemonade.png',
   },
   {
     id: 'hotcakes-matcha',
@@ -43,6 +47,7 @@ export const menuItems = [
     price: 'Desde $95',
     accent: 'var(--matcha)',
     gradient: 'linear-gradient(160deg, rgba(183, 201, 107, 0.15), rgba(184, 115, 69, 0.1) 60%)',
+    image: '/images/menu/hot-cakes-matcha-azuki.png',
   },
   {
     id: 'mochi-fresa',
@@ -52,5 +57,6 @@ export const menuItems = [
     price: 'Desde $45',
     accent: 'var(--sakura)',
     gradient: 'linear-gradient(160deg, rgba(233, 93, 139, 0.15), rgba(14, 10, 7, 0.9) 60%)',
+    image: '/images/menu/mochi-fresa.png',
   },
 ];

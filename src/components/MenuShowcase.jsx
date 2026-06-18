@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useCallback } from 'react';
 import { motion } from 'framer-motion';
 import { UtensilsCrossed, Star } from 'lucide-react';
 import { menuItems } from '../data/menu';
@@ -11,6 +11,54 @@ const fadeUp = {
 const stagger = {
   visible: { transition: { staggerChildren: 0.1 } },
 };
+
+function MenuCard({ item }) {
+  const [imgFailed, setImgFailed] = useState(false);
+  const showImage = item.image && !imgFailed;
+
+  const handleError = useCallback(() => {
+    setImgFailed(true);
+  }, []);
+
+  return (
+    <motion.div className="menu-card" variants={fadeUp}>
+      <div className="menu-card-image">
+        {showImage && (
+          <img
+            src={process.env.PUBLIC_URL + item.image}
+            alt={item.name}
+            className="menu-card-photo"
+            onError={handleError}
+            loading="lazy"
+          />
+        )}
+        <div
+          className="menu-card-gradient"
+          style={{ background: item.gradient }}
+        />
+        <span
+          className="menu-card-category"
+          style={{ color: item.accent }}
+        >
+          {item.category}
+        </span>
+      </div>
+      <div className="menu-card-body">
+        <h3 className="menu-card-name">{item.name}</h3>
+        <p className="menu-card-desc">{item.description}</p>
+        <div className="menu-card-footer">
+          <span className="menu-card-price" style={{ color: item.accent }}>
+            {item.price}
+          </span>
+          <span className="menu-card-detail">
+            <Star size={12} />
+            Premium
+          </span>
+        </div>
+      </div>
+    </motion.div>
+  );
+}
 
 export default function MenuShowcase() {
   return (
@@ -43,33 +91,7 @@ export default function MenuShowcase() {
           variants={stagger}
         >
           {menuItems.map((item) => (
-            <motion.div className="menu-card" key={item.id} variants={fadeUp}>
-              <div className="menu-card-image">
-                <div
-                  className="menu-card-gradient"
-                  style={{ background: item.gradient }}
-                />
-                <span
-                  className="menu-card-category"
-                  style={{ color: item.accent }}
-                >
-                  {item.category}
-                </span>
-              </div>
-              <div className="menu-card-body">
-                <h3 className="menu-card-name">{item.name}</h3>
-                <p className="menu-card-desc">{item.description}</p>
-                <div className="menu-card-footer">
-                  <span className="menu-card-price" style={{ color: item.accent }}>
-                    {item.price}
-                  </span>
-                  <span className="menu-card-detail">
-                    <Star size={12} />
-                    Premium
-                  </span>
-                </div>
-              </div>
-            </motion.div>
+            <MenuCard key={item.id} item={item} />
           ))}
         </motion.div>
       </div>

@@ -6,9 +6,8 @@ import WhyNowSection from './components/WhyNowSection';
 import ValueSection from './components/ValueSection';
 import MenuShowcase from './components/MenuShowcase';
 import ExperienceSection from './components/ExperienceSection';
+import AboutSection from './components/AboutSection';
 import LeadForm from './components/LeadForm';
-import GoToMarket from './components/GoToMarket';
-import AARRRFunnel from './components/AARRRFunnel';
 import Footer from './components/Footer';
 
 function App() {
@@ -28,11 +27,9 @@ function App() {
         <div className="section-divider" />
         <ExperienceSection />
         <div className="section-divider" />
+        <AboutSection />
+        <div className="section-divider" />
         <LeadForm />
-        <div className="section-divider" />
-        <GoToMarket />
-        <div className="section-divider" />
-        <AARRRFunnel />
         <div className="section-divider" />
       </main>
       <Footer />

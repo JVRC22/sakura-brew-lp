@@ -13,8 +13,7 @@ const footerLinks = [
   { label: 'Concepto', href: '#concepto' },
   { label: 'Menú', href: '#menu' },
   { label: 'Experiencia', href: '#experiencia' },
-  { label: 'Tracción', href: '#traccion' },
-  { label: 'Métricas', href: '#metricas' },
+  { label: 'Nosotros', href: '#nosotros' },
   { label: 'Lista VIP', href: '#lista-vip' },
 ];
 
