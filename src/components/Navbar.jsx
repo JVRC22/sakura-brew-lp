@@ -34,9 +34,9 @@ export default function Navbar() {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`} id="navbar">
       <div className="navbar-inner">
         <a href="#inicio" className="navbar-brand" aria-label="Sakura Brew Café — Inicio">
-          <span className={`brand-icon ${images.logo ? 'has-logo' : 'no-logo'}`}>
+          <span className={`brand-icon ${images.logoMain ? 'has-logo' : 'no-logo'}`}>
             {images.logo ? (
-              <img src={images.logo} alt="Sakura Brew" />
+              <img src={images.logoMain} alt="Sakura Brew" />
             ) : (
               <Cherry size={20} color="white" />
             )}

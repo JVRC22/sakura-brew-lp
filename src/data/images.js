@@ -11,10 +11,11 @@ function tryRequire(path) {
 }
 
 export const images = {
-  sakuraCourtyard: tryRequire('sakura-courtyard.jpeg'),
-  floorplan: tryRequire('floorplan.jpeg'),
-  teaRoom: tryRequire('tea-room.jpeg'),
-  coffeeBar: tryRequire('coffee-bar.jpeg'),
-  cafeInterior: tryRequire('cafe-interior.jpeg'),
+  sakuraCourtyard: tryRequire('sakura-courtyard.png'),
+  floorplan: tryRequire('floorplan.png'),
+  teaRoom: tryRequire('tea-room.png'),
+  coffeeBar: tryRequire('coffee-bar.png'),
+  cafeInterior: tryRequire('cafe-interior.png'),
   logo: tryRequire('logo.png'),
+  logoMain: tryRequire('logo-main.png'),
 };
