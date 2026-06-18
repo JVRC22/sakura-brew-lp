@@ -5,7 +5,6 @@ import {
   Compass, Eye, BookOpen, Quote,
 } from 'lucide-react';
 import { aboutData } from '../data/about';
-import { images } from '../data/images';
 
 const iconMap = {
   Fingerprint,
