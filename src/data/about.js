@@ -10,12 +10,12 @@ export const aboutData = {
 
   mission: {
     title: 'Misión',
-    text: 'Ofrecer una experiencia gastronómica que fusiona la riqueza de las bebidas asiáticas y los platillos trendy con la comodidad de un menú de desayuno y comida de todo el día, elaborado con ingredientes frescos, técnicas artesanales y respeto por las culturas que inspiran nuestros platos.',
+    text: 'Crear y comercializar bebidas y alimentos de inspiración asiática en formato de lata PET transparente, diseñados para jóvenes de Torreón que buscan opciones frescas, portátiles y visualmente atractivas, adaptadas al clima cálido de la región.',
   },
 
   vision: {
     title: 'Visión',
-    text: 'En cinco años, queremos que Sakura Brew sea ese lugar en la ciudad al que la gente llega por los hot cakes y las bebidas trendy, pero regresa por cómo se siente cuando entra. Buscamos ser una referencia de sabor internacional auténtico, con calidez humana, diseño memorable y disciplina para crecer sin perder lo que nos hace únicos.',
+    text: 'Ser la cafetería de referencia en el norte de México para jóvenes que buscan bebidas y alimentos asiáticos en formato portátil, alcanzando 3 ubicaciones en Torreón, Saltillo y Monterrey para 2031, con ventas anuales consolidadas de $8.5 MDP, un ticket promedio de $120 MXN y una base de 5,000 clientes recurrentes registrados en nuestro programa de lealtad, manteniendo un margen bruto superior al 65%.',
   },
 
   values: [
